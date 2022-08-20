@@ -9,7 +9,12 @@ withdrawButton.addEventListener("click", function () {
   // parseFloat diye number a rupantor kora hoise
   let newWithdrawAmount = parseFloat(newWithdrawAmountString);
 
-  if (newWithdrawAmount >= 0) {
+  let balanceTotalElement = document.getElementById("balance");
+  let previousBalanceTotal = parseFloat(balanceTotalElement.innerText);
+  if (previousBalanceTotal < newWithdrawAmount) {
+    alert("Bhai Besi tuila falaisen eto taka nai bank a");
+    withdrawField.value = "";
+  } else if (newWithdrawAmount >= 0) {
     // step 3 Show how much money you withdraw here
     // ekhane withdraw te koto taka withdraw kora hoise seta dekhanor jonno withdraw tag er id neya hoise ebong value neya hoise innerText er dara
     // parseFloat diye number a rupantor kora hoise
@@ -23,8 +28,8 @@ withdrawButton.addEventListener("click", function () {
 
     // step 5 getting balance total amount by id from p tag abong er value innerText dara neya hoise
 
-    let balanceTotalElement = document.getElementById("balance");
-    let previousBalanceTotal = parseFloat(balanceTotalElement.innerText);
+    balanceTotalElement = document.getElementById("balance");
+    previousBalanceTotal = parseFloat(balanceTotalElement.innerText);
     // new withdraw amount er sate orthat withdraw input field er ammount theke total balance minus kora hoise
     let currentBalanceTotal = previousBalanceTotal - newWithdrawAmount;
     // total balance er value set kore deya hoise total balance theke new withdraw amount minue kore
@@ -33,7 +38,7 @@ withdrawButton.addEventListener("click", function () {
 
     withdrawField.value = "";
   } else {
-    alert("Bro, Wrong Amount, Please Put Correct Amount ");
+    alert("Bro, Wrong Amount Given, Please Put Correct Amount");
     withdrawField.value = "";
   }
 });
