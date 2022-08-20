@@ -1,0 +1,204 @@
+body {
+  background-color: #fbd1b7;
+}
+
+.title h1 {
+  font-size: 60px;
+  margin-top: 200px;
+  color: #000232;
+}
+
+.form {
+  width: 600px;
+  background-color: #000232;
+  display: grid;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.email {
+  margin-bottom: 20px;
+}
+.email input {
+  width: 400px;
+  max-width: 400px;
+  background-color: #000232;
+  border: none;
+  border-bottom: 1px solid #fbd1b7;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.password {
+  margin-bottom: 20px;
+}
+.password input {
+  width: 400px;
+  max-width: 400px;
+  background-color: #000232;
+  border: none;
+  border-bottom: 1px solid #fbd1b7;
+  font-size: 24px;
+  color: white;
+}
+
+.sub-title h1 {
+  color: #fbd1b7;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.sub-title span {
+  color: white;
+  font-size: 40px;
+}
+
+::placeholder {
+  padding-left: 5px;
+  color: white;
+  opacity: 1;
+}
+
+.button-section a {
+  background-color: pink;
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.button-section a:hover {
+  color: white;
+}
+
+.deposit {
+  background-color: rgb(228, 167, 177);
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.deposit h1 {
+  color: white;
+  font-size: 45px;
+}
+
+.deposit p {
+  font-size: 35px;
+  color: white;
+}
+
+.withdraw {
+  background-color: orangered;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.withdraw h1 {
+  color: white;
+  font-size: 45px;
+}
+
+.withdraw p {
+  font-size: 35px;
+  color: white;
+}
+
+.balance {
+  background-color: coral;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.balance h1 {
+  font-size: 45px;
+  color: white;
+}
+
+.balance p {
+  font-size: 35px;
+  color: white;
+}
+
+.title-section h1 {
+  font-size: 75px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.details-area {
+  margin-bottom: 100px;
+}
+
+.deposite-money {
+  background-color: rgb(228, 167, 177);
+  text-align: center;
+  padding: 50px 0;
+}
+
+.deposite-money h1 {
+  font-size: 45px;
+  color: white;
+  text-align: center;
+}
+
+.deposite-money input {
+  color: black;
+  background-color: rgb(228, 167, 177);
+  font-size: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.button-deposit button {
+  color: white;
+  background-color: green;
+
+  font-size: 20px;
+  padding: 12px 30px;
+}
+
+.withdraw-money {
+  background-color: coral;
+
+  padding: 50px 0;
+  text-align: center;
+}
+
+.withdraw-money h1 {
+  font-size: 45px;
+  color: white;
+  text-align: center;
+}
+
+.withdraw-money input {
+  color: black;
+  font-size: 30px;
+  background-color: coral;
+
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.button-withdraw button {
+  color: white;
+  background-color: rgb(67, 193, 231);
+  font-size: 20px;
+  padding: 12px 30px;
+}
+
+.withdraws::placeholder {
+  color: dimgray;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
